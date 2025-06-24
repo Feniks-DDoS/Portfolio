@@ -1,0 +1,43 @@
+@use "../helpers" as *;
+
+.soc1als {
+
+    @include mobile-s {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: rem(32);
+    }
+
+    &__item {
+        color: var(--color-brand-1);
+        transition: var(--transition-duration);
+
+        @include hover {
+            filter: drop-shadow( rem(0) rem(0) rem(20) rgba($color: #12F7D6, $alpha: 1.0));
+        }
+
+        @include mobile {
+            display: flex;
+        }
+    }
+
+    &__link {
+        column-gap: rem(8);
+        &-span {
+        text-transform: capitalize;
+        font-size: rem(16);
+        line-height: 1.2;
+        color: var(--color-light);
+
+        @include tablet {
+            display: none;
+        }
+        }
+    }
+    
+}

@@ -1,0 +1,25 @@
+@use "./helpers/" as *;
+
+:root {
+
+    --color-light: #FFFFFF;
+    --color-dark: #1A1E23;
+    --color-dark-light: #292F36;
+
+    --color-gray: #43454D;
+
+    --color-brand-1: #12F7D6;
+    --color-brand-2: #98FAEC;
+
+    --color-red: #E54F26;
+    --color-dark-blue: #0C73B8;
+    --color-blue: #28A9E0;
+    --color-orange: #E7A020;
+    
+    --container-width: #{rem(1664)};
+    --container-padding-x: #{rem(24)};
+
+    --transition-duration: 0.2s;
+
+    --font-family-base: 'IBMPlexMono' , sans-serif;
+}

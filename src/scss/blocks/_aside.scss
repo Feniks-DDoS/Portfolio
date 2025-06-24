@@ -1,0 +1,38 @@
+@use "../helpers" as *;
+
+.aside {
+    position: absolute;
+    translate: 0% -44%;
+
+    @include mobile {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: rem(24);
+        padding: rem(8) rem(12);
+        border: rem(1) solid var(--color-light);
+        border-radius: rem(40);
+        background-color: var(--color-dark);
+    }
+
+    &__link {
+        padding: rem(8);
+        border-radius: rem(40);
+        transition: var(--transition-duration);
+
+        @include hover {
+            filter: drop-shadow(rem(0) rem(0) rem(10) rgba($color: #FFFFFF, $alpha: 1.0));
+        }
+
+        &.is-active {
+            color: var(--color-dark);
+            background-color: var(--color-light);
+            pointer-events: none;
+        }
+    }
+}

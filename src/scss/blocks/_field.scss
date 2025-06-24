@@ -1,0 +1,86 @@
+@use "../helpers" as *;
+
+.field {
+
+        position: relative;
+    &__control {
+        border-radius: rem(24);
+        border: none;
+        min-height: rem(32);
+        padding-left: rem(16);
+
+        @include mobile {
+            display: none
+        }
+
+        &--drop {
+            display: initial;
+            @include abs-y;
+            left: rem(-64);
+            translate: -50% 90%; 
+
+            @include mobile-s {
+                left: rem(-98);
+            }
+        }
+    }
+
+    &__seacrh-mobile {
+        position: relative;
+        transition: var(--transition-duration);
+        &:not(.is-active) {
+            display: none;
+        }
+    }
+
+    &__search-button {
+        @include abs-y;
+        left: 85%;
+        color: var(--color-dark);
+        cursor: pointer;
+        transition: var(--transition-duration);
+
+        @include mobile {
+            color: var(--color-light);
+        }
+
+        @include mobile-s {
+            left: rem(-32);
+        }
+
+        &.is-hide {
+            opacity: 0;
+        }
+        
+        &--mobile {
+            color: var(--color-dark);
+        @include abs-y;
+        translate: 0 166%;
+        left: 85%;
+
+        @include mobile-s {
+            left: rem(-32);
+        }
+        }
+    }
+
+    &__close-seacrh {
+        @include abs-y;
+        left: rem(-6);
+        color: var(--color-dark);
+        cursor: pointer;
+        background-color: var(--color-light);
+        border: none;
+        border-radius: 50%;
+        transition: var(--transition-duration);
+
+        @include mobile-s {
+            left: rem(-32);
+        }
+
+        &:not(.is-active) {
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+}

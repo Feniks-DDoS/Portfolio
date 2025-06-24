@@ -1,0 +1,102 @@
+@use './helpers' as *;
+
+.container {
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    padding-inline: var(--container-padding-x);
+    margin-inline: auto;
+}
+.visually-hidden {
+   @include visually-hidden;
+}
+
+.hidden-mobile {
+    @include mobile {
+        display: none !important;
+    }
+}
+.visible-mobile {
+    
+    @include mobile-above {
+        display: none !important;
+    }
+}
+
+.hidden-mobile-s {
+    @include mobile-s {
+        display: none !important;
+    }
+}
+.visible-mobile-s {
+    
+    @include mobile-s-above {
+        display: none !important;
+    }
+}
+.hidden-tablet {
+    @include tablet {
+        display: none !important;
+    }
+}
+
+.visible-tablet {
+    @include tablet-above {
+        display: none !important;
+    }
+}
+.visible-laptop {
+    @include laptop-above {
+        display: none !important;
+    }
+}
+.hidden-laptop {
+    @include laptop {
+        display: none !important;
+    }
+}
+
+
+ .circel-icon {
+      position: relative;
+
+       --circleSize: #{rem(50)};
+        --circleMarginLeft: #{rem(20)};
+
+        padding-right: calc(var(--circleSize) + var(--circleMarginLeft));
+        min-height: var(--circleSize);
+
+
+           
+     @include laptop {
+       --circleSize: #{rem(40)};
+        --circleMarginLeft: #{rem(14)};
+        row-gap: rem(2);
+    }
+
+    
+    @include mobile {
+            --circleSize: #{rem(35)};
+        }
+
+        &::after {
+            @include square(var(--circleSize));
+            @include abs-y;
+
+            content: "";
+            right: 0;
+            border-radius: var(--border-radius);
+            background: url(../icons/header/Dark-bag.svg) #DAE5DA;
+            background-position: center;
+            background-repeat: no-repeat;
+             transition: var(--transition-duration);
+        }
+       
+
+        @include hover {
+              &::after {  
+                background: url(../icons/White-Bag.svg) var(--color-primary);
+                background-position: center;
+                background-repeat: no-repeat;
+              }
+
+            }
+ }
