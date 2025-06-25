@@ -9,11 +9,11 @@
             padding-bottom: rem(64);
     }
     &__card {
-        padding: rem(24);
+        padding: rem(30);
         justify-self: start;
-        border: rem(2) solid var(--color-light);
-        border-radius: 100% 0% 100% 0% / 19% 75% 25% 81% ;
-        box-shadow: rem(0) rem(0) rem(10) rgba($color: #12F7D6, $alpha: 1.0);
+        border: rem(4) solid var(--color-light);
+        border-radius: rem(160) rem(0);
+        box-shadow: rem(-4) rem(-4) rem(2) rem(0) rgba($color: #12F7D6, $alpha: 1.0);
         min-height: rem(520);
         position: relative;
 
@@ -21,7 +21,7 @@
             justify-self: center;  
         }
         @include mobile-s {
-            padding-inline: rem(5);
+            padding: rem(56) rem(7);         
         }
         &-header {
             display: flex;
@@ -36,9 +36,10 @@
 
     &__image {
         border: rem(3) solid var(--color-brand-1);
-        border-radius: 50%;
+        border-radius: 20%;
         max-width: rem(100);
         max-height: rem(100);
+        pointer-events: none;
     }
 
     &__title {

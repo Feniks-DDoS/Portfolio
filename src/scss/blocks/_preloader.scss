@@ -1,0 +1,50 @@
+@use "../helpers" as *;
+
+
+.preloader {
+    position: fixed;
+    z-index: calc(infinity);
+    inset: 0;
+    background-color:  var(--color-dark-light);
+    animation-name: fade-out-preloader;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    opacity: 0;
+    pointer-events: none;
+    
+    &__in {
+        position: absolute;
+        inset: 0;
+        background-color: var(--color-brand-1);
+        animation-name: circle-preloader;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        clip-path: circle(75%);
+    }
+
+    @keyframes fade-out-preloader {
+        0% {
+            opacity: 1;
+        }
+
+        80% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes circle-preloader {
+        0% {
+            clip-path: circle(75%);
+        }
+        50% {
+            clip-path: circle(25%);
+        }
+        100% {
+            clip-path: circle(75%);
+        }
+    }
+}
