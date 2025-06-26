@@ -10,6 +10,7 @@ class AsideChange {
         skillsLink: `[data-js-aside-skills-link]`,
         workLink: `[data-js-aside-works-link]`,
         blogLink: `[data-js-aside-blogs-link]`,
+        contactLink: `[data-js-aside-contact-link]`,
     }
 
     stateClasses = {
@@ -29,6 +30,7 @@ class AsideChange {
         this.skillsLinkElement = this.rootElement.querySelector(this.selectors.skillsLink)
         this.workLinkElement = this.rootElement.querySelector(this.selectors.workLink)
         this.blogLinkElement = this.rootElement.querySelector(this.selectors.blogLink)
+        this.contactLinkElement = this.rootElement.querySelector(this.selectors.contactLink)
 
         this.bindEvents()
     }
@@ -57,6 +59,9 @@ class AsideChange {
         }else if(scrollHeight > 4300 && scrollHeight <= 5500) {
             this.blogLinkElement.classList.add(this.stateClasses.isActive)
             this.blogLinkElement.setAttribute(this.stateAttribute.ariaCurrent , 'page')
+        }else if(scrollHeight > 5500 && scrollHeight <= 6400) {
+            this.contactLinkElement.classList.add(this.stateClasses.isActive)
+            this.contactLinkElement.setAttribute(this.stateAttribute.ariaCurrent , 'page')
         }
     }
 

@@ -1,0 +1,76 @@
+@use "../helpers" as *;
+
+
+.footer {
+    padding-block: rem(16);
+    background-color: var(--color-dark);
+    border-top: rem(1) solid var(--color-gray);
+    font-weight: 300;
+    font-family: 'Ubuntu';
+    font-size: rem(16);
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: rem(16);
+
+        @include tablet {
+            flex-direction: column;
+            row-gap: rem(24);
+        }
+    }
+
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: rem(32);
+
+        @include mobile {
+            flex-direction: column;
+            row-gap: rem(24);
+        }
+    }
+
+    &__link { 
+         @include hover {
+                filter: drop-shadow(rem(0) rem(0) rem(10) rgba($color: #98FAEC, $alpha: 1.0));
+            }
+    }
+
+    &__soc1als {
+
+        @include tablet {
+            order: -1;
+        }
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: rem(32);
+        }
+
+        &-link {
+            color: var(--color-dark);
+            background-color: var(--color-brand-2);
+            border-radius: rem(48);
+            padding: rem(8);
+
+            @include hover {
+                filter: drop-shadow(rem(0) rem(0) rem(10) rgba($color: #98FAEC, $alpha: 1.0));
+            }   
+        }
+    }
+
+    &__design-author {
+        &-link {
+            &--span {
+                padding-left: rem(3);
+                color: var(--color-brand-1);
+                border-bottom: rem(1) solid var(--color-brand-1);
+            }
+        }
+    }
+}

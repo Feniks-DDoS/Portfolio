@@ -2,6 +2,7 @@
 
 .section {
     padding-block: rem(128);
+    position: relative;
 
     @include tablet {
         padding-block: rem(64);
@@ -54,6 +55,23 @@
 
         @include tablet {
             padding-block: rem(64);
+        }
+    }
+
+    &--contact {
+        background-color: var(--color-dark);
+        padding-block: rem(64);
+
+        @include tablet {
+            padding-top: rem(32);
+            padding-bottom: rem(64);
+        }
+    }
+
+    &--privacy {
+
+        @include mobile {
+            padding-top: rem(112);
         }
     }
 }

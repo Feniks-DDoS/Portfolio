@@ -1,0 +1,34 @@
+@use "../helpers" as *;
+
+.change-lenguage {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: rem(32);
+        background-color: var(--color-dark);
+        padding: rem(12) rem(14);
+        border-radius: rem(38);
+    }
+
+    &__button {
+
+        @include hover {
+            box-shadow:inset rem(0) rem(0) rem(10) rgba($color: #12F7D6, $alpha: 1.0);
+        }
+
+        @include mobile {
+            padding: rem(8);
+        }
+
+        &.is-active {
+            border: rem(1) solid var(--color-brand-1);
+            pointer-events: none;
+        }
+    }
+    
+}
