@@ -13,10 +13,15 @@
         column-gap: rem(128);
         align-items: start;
         padding-top: rem(128);
+        padding-left: rem(128);
 
         @include laptop {
             grid-template-columns: 1fr;
             gap: rem(128);
+        }
+
+        @include tablet {
+            padding-left: 0;
         }
 
         @include tablet {

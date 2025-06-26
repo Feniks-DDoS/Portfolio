@@ -1,8 +1,8 @@
 @use "../helpers" as *;
 
 .aside {
-    position: absolute;
-    translate: 0% -44%;
+    position: fixed;
+    translate: 0% -10%;
     opacity: 0;
     transform: translateX(-50%);
     animation: showBody 0.6s ease-out forwards;
@@ -16,7 +16,7 @@
         }
     }
 
-    @include mobile {
+    @include tablet {
         display: none;
     }
 
@@ -34,17 +34,17 @@
 
     &__link {
         padding: rem(8);
-        border-radius: rem(40);
         transition: var(--transition-duration);
-
-        @include hover {
-            filter: drop-shadow(rem(0) rem(0) rem(10) rgba($color: #FFFFFF, $alpha: 1.0));
-        }
 
         &.is-active {
             color: var(--color-dark);
             background-color: var(--color-light);
             pointer-events: none;
+            border-radius: rem(40);
+        }
+
+        @include hover {
+            filter: drop-shadow(rem(0) rem(0) rem(10) rgba($color: #FFFFFF, $alpha: 1.0));
         }
     }
 }

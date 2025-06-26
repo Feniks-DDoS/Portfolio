@@ -1,0 +1,8 @@
+@use "../helpers" as *;
+
+
+.work {
+    &__body {
+        padding-top: rem(64);
+    }
+}

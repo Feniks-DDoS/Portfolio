@@ -1,0 +1,130 @@
+@use "../helpers" as *;
+
+.blog {
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: rem(64);
+        padding-top: rem(64);
+        font-family: 'Ubuntu';
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: rem(64);
+        padding-block: rem(64);
+        padding-inline: rem(14);
+        border-block: rem(1) solid var(--color-light);
+        border-radius: rem(4);
+
+        @include tablet {
+            column-gap: rem(32);
+            padding-block: rem(32);
+        }
+
+        @include mobile {
+            flex-direction: column;
+            row-gap: rem(32);
+        }
+
+        &-info {
+            max-width: rem(720);
+            display: grid;
+            row-gap: rem(24);
+        }
+
+        &-description {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: max-content;
+            align-items: center;
+            justify-content: start;
+            gap: rem(24);
+
+        }
+
+        &-image {
+            align-self: start;
+
+            @include mobile {
+                align-self: center;
+            }
+        }
+    }
+
+    &__title {
+        line-height: 1.1;
+    }
+
+    &__subtitle {
+        font-size: rem(16);
+        line-height: 1.1;
+        font-weight: 300;
+    }
+
+    &__link {
+        color: var(--color-brand-1);
+        font-size: rem(16);
+        line-height: 1.1;
+        font-weight: 300;
+        padding-bottom: rem(4);
+        border-bottom: rem(1) solid var(--color-light);
+        border-radius: rem(4);
+        max-width: max-content;
+
+        &-span {
+            transition: var(--transition-duration);
+            &:first-child {
+            padding-left: rem(4);
+            }
+        }
+
+        @include hover {
+
+             .blog__link-span {
+                transform: translateX(30%);
+            }
+        }
+    }
+
+    &__tag {
+        padding: rem(4) rem(8);
+        background-color: var(--color-gray);
+        border-radius: rem(16);
+        font-size: rem(14);
+        font-weight: 300;
+        text-transform: capitalize;
+        line-height: 1.14;
+    }
+
+    &__reading-time,
+    &__time,
+    &__actor {
+        font-weight: 500;
+
+        &-span {
+            padding-left: rem(8);
+            font-size: rem(14);
+            font-weight: 300;
+            text-transform: capitalize;
+            line-height: 1.14;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: rem(32);    
+
+        @include mobile-s {
+            row-gap: rem(16);
+            flex-direction: column;
+            align-self: start;
+        }
+    }
+}

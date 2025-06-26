@@ -28,13 +28,25 @@ class Preloader {
 class PreloaderCollection {    
     constructor() {
         this.init()
+        this.scrollToHeroSection()
     }
 
     init() {
         document.querySelectorAll(rootSelector).forEach((element) => {
             new Preloader(element)
         })
-}
+    }
+
+    scrollToHeroSection() {
+        const hero = document.querySelector('[data-js-header]')
+
+        if(!hero) {
+            this.onAnimationEnd()
+            return
+        }
+
+        hero.scrollIntoView({behavior: 'smooth'})
+    }
 }
 
 export default PreloaderCollection

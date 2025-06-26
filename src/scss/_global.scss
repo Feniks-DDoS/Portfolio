@@ -135,8 +135,45 @@ button {
 
        @include hover {
         background-color: transparent;
-        border: rem(1) solid var(--color-brand-1);
+        border: rem(2) solid var(--color-brand-1);
         color: var(--color-light);
        }
+    }
+
+    &__circel {
+        padding: rem(16);
+        background-color: var(--color-dark-light);
+        color: var(--color-light);
+        border: none;
+
+        @include mobile-s {
+            padding: rem(8);
+        }
+    }
+
+    &--green {
+        background-color: var(--color-brand-1);
+        color: var(--color-dark);
+        border: none;
+
+        @include hover {
+
+        background-color: transparent;
+        border: rem(2) solid var(--color-brand-1);
+        color: var(--color-light); 
+        }
+    }
+
+    &--transparent {
+        background-color: transparent;
+        border: rem(2) solid var(--color-brand-1);
+        color: var(--color-light); 
+        
+        @include hover {
+            
+        background-color: var(--color-brand-1);
+        color: var(--color-dark);
+        border: rem(2) solid var(--color-brand-1);
+        }
     }
 }

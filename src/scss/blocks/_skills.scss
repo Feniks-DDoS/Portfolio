@@ -39,24 +39,6 @@
         align-items: center;
         justify-content: center;
         row-gap: rem(16);
-
-        &-icon-svg {
-        transform-origin: center;
-
-        @include tablet-above {
-                animation: shrinkExpand 4s ease-in-out infinite;
-
-            @keyframes shrinkExpand {
-                0%, 100% {
-                transform: scaleX(1);
-                }
-                50% {
-                transform: scaleX(0.3);
-                }
-            }
-        }
-       
-        }
     }
 
    

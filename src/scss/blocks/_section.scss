@@ -3,7 +3,7 @@
 .section {
     padding-block: rem(128);
 
-    @include mobile {
+    @include tablet {
         padding-block: rem(64);
     }
 
@@ -17,7 +17,7 @@
             height: 100%;
             inset: 0;
             z-index: -1;
-            background: url() center/cover no-repeat;
+            background: url(/icons/about/about-bg.svg) center/cover no-repeat;
         }
     }
 
@@ -31,7 +31,29 @@
             height: 100%;
             inset: 0;
             z-index: -1;
-            background: url() center/cover no-repeat;
+            background: url(/images/skills/skill-bg.jpg) center/cover no-repeat;
+        }
+    }
+
+    &--bg-black {
+             position: relative;
+
+        &::before {            
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            inset: 0;
+            z-index: -1;
+            background: url(/images/work/bg.jpg) center/cover no-repeat;
+        }
+    }
+
+    &--small {
+        padding-block: rem(100);
+
+        @include tablet {
+            padding-block: rem(64);
         }
     }
 }
