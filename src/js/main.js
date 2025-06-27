@@ -11,6 +11,7 @@ import ChangeLanCollection from "./ChangeLang.js"
 
 
 
+
 new ShowSeacrhCollection()
 
 new PreloaderCollection()
