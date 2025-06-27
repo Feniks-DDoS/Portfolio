@@ -33,7 +33,7 @@ class AutoScroll {
                 this.userInitiatedScroll = true;
                 setTimeout(() => {
                     this.userInitiatedScroll = false;
-                }, 2000); 
+                }, 2500); 
             });
         });
     }

@@ -58,4 +58,19 @@
     &__image {
         border-radius: rem(8);
     }
+
+    &__ph {
+        &-list {
+            display: grid;
+            row-gap: rem(16);
+            list-style: disc;
+            padding-left: rem(16);
+        }
+
+        &-item {
+            &::marker {
+                color: var(--color-brand-1);
+            }
+        }
+    }
 }

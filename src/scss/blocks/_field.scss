@@ -28,6 +28,7 @@
     &__seacrh-mobile {
         position: relative;
         transition: var(--transition-duration);
+
         &:not(.is-active) {
             display: none;
         }
@@ -42,6 +43,8 @@
 
         @include mobile {
             color: var(--color-light);
+            width: rem(28);
+            height: rem(28);
         }
 
         @include mobile-s {
@@ -51,37 +54,66 @@
         &.is-hide {
             opacity: 0;
         }
-        
-        &--mobile {
-            color: var(--color-dark);
-        @include abs-y;
-        translate: 0 166%;
-        left: 85%;
+    
+    }
 
-        @include mobile-s {
-            left: rem(-32);
+    &__search-results {
+        max-height: rem(100);
+        overflow-y: auto;
+        position: absolute;
+        top: 110%;
+        background: var(--color-light);
+        width: rem(230);
+        border-radius: rem(18);
+        z-index: 10;
+
+        @include mobile {
+            translate: -80% 185%;
+            width: rem(210);
         }
+
+        @include mobile-s {            
+            translate: -96% 185%;
+        }
+
+        &-item {
+            display: block;
+            padding: rem(6) rem(10);
+            text-decoration: none;
+            color: var(--color-dark);
+            transition: var(--transition-duration);
+            cursor: pointer;
+
+            &:not(:last-child) {
+                border-bottom: rem(1) solid var(--color-dark);
+            }
+
+            @include hover {
+                background-color: var(--color-gray);
+                color: var(--color-light)
+            }
         }
     }
 
     &__close-seacrh {
         @include abs-y;
-        left: rem(-6);
+        left: 85%;
         color: var(--color-dark);
-        cursor: pointer;
         background-color: var(--color-light);
-        border: none;
-        border-radius: 50%;
+        cursor: pointer;
+        border-radius: rem(24);
         transition: var(--transition-duration);
+        
 
         @include mobile-s {
             left: rem(-32);
         }
-
+          
         &:not(.is-active) {
             opacity: 0;
             z-index: -1;
         }
+
     }
 
     &__form {

@@ -10,6 +10,7 @@ import SwiperCollection from "./WorkSwiper.js"
 import ChangeLanCollection from "./ChangeLang.js"
 import FormValidateCollection from "./FromValidate.js"
 import ShareCollection from "./Share.js"
+import SearchCollection from "./Search.js"
 
 
 
@@ -33,3 +34,5 @@ new ChangeLanCollection()
 new FormValidateCollection()
 
 new ShareCollection()
+
+new SearchCollection()
