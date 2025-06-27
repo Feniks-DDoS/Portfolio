@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,  user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
-    <title>Dikhtyarenko Valentyn. Front-end | Terms & Conditions</title>    
+    <title>Dikhtyarenko Valentyn. Front-end | Single Blog</title>    
     <link rel="icon" href="/Portfolio/icons/header/logotipe.svg">
     <script type="module" crossorigin src="/Portfolio/assets/main-D0-nJ9_8.js"></script>
     <link rel="stylesheet" crossorigin href="/Portfolio/assets/main-57fALTO2.css">
@@ -27,7 +27,7 @@
                   <a href="./index.html" class="header__menu-link h4">Home</a>
                 </li>
                 <li class="header__menu-item">
-                  <a href="./blog.html" class="header__menu-link h4">Blogs</a>
+                  <a href="./blog.html" class="header__menu-link is-active h4">Blogs</a>
                 </li>
               </ul>
               <form class="header__menu-search field" data-js-search-form>
@@ -92,40 +92,105 @@
       </div>
     </header>
 
-    <main>
-        <section class="section section--privacy" aria-labelledby="Terms & Conditions-title" data-js-privacy>
+    <main>  
+        <section class="section" aria-labelledby="single-blog-title" data-js-share>
             <div class="section__inner container">
-                <div class="change-lenguage">
-                    <div class="change-lenguage__inner">
-                        <button data-js-button-english type="button" class="button change-lenguage__button is-active button__circel">EN</button>
-                        <button data-js-button-japanese type="button" class="button change-lenguage__button button__circel">日本語</button>
-                    </div>
-                </div>
-                <div class="privacy">
-                    <div class="privacy__inner">
-                        <div class="privacy__header">                            
-                            <h2 class="section__title" data-i18n="terms_title" id="Terms & Conditions-title">Terms & Conditions</h2>
+                <div class="single-blog">
+                    <article class="single-blog__inner">
+                        <div class="single-blog__header">
+                            <h2 class="single-blog__title h3">My First Experience with Programming</h2>
+                            <div class="single-blog__subtitle">
+                                <div class="blog__card-description">
+                                <p class="blog__actor">Text<span class="blog__actor-span">Valentyn</span></p>
+                                <p class="blog__time">Date<span class="blog__actor-span"><time datetime="2025/6/27">27.Jun 2025</time></span></p>
+                                <p class="blog__reading-time">Read<span class="blog__actor-span">1 Min</span></p>
+                                </div>
+                                <button class="single-blog button button--share" type="button" data-js-share-button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path class="arrow-move-up" d="M7.5286 0.861919C7.78895 0.601569 8.21106 0.601569 8.4714 0.861919L11.1381 3.52859C11.3984 3.78893 11.3984 4.21104 11.1381 4.47139C10.8777 4.73174 10.4556 4.73174 10.1953 4.47139L8.66667 2.9428L8.66667 9.99999C8.66667 10.3682 8.36819 10.6667 8 10.6667C7.63181 10.6667 7.33333 10.3682 7.33333 9.99999L7.33333 2.9428L5.80474 4.47139C5.54439 4.73174 5.12228 4.73174 4.86193 4.47139C4.60158 4.21104 4.60158 3.78893 4.86193 3.52859L7.5286 0.861919Z" fill="#2D3648"/>
+                                    <path d="M2.66667 7.33332C3.03486 7.33332 3.33333 7.6318 3.33333 7.99999V13.3333C3.33333 13.5101 3.40357 13.6797 3.5286 13.8047C3.65362 13.9298 3.82319 14 4 14H12C12.1768 14 12.3464 13.9298 12.4714 13.8047C12.5964 13.6797 12.6667 13.5101 12.6667 13.3333V7.99999C12.6667 7.6318 12.9651 7.33332 13.3333 7.33332C13.7015 7.33332 14 7.6318 14 7.99999V13.3333C14 13.8638 13.7893 14.3725 13.4142 14.7475C13.0391 15.1226 12.5304 15.3333 12 15.3333H4C3.46957 15.3333 2.96086 15.1226 2.58579 14.7475C2.21071 14.3725 2 13.8638 2 13.3333V7.99999C2 7.6318 2.29848 7.33332 2.66667 7.33332Z" fill="#2D3648"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="single-blog__image-wrapper">
+                                <img 
+                                src="/Portfolio/assets/3-B1tcK2ta.jpeg" 
+                                alt=""
+                                width="720"
+                                height="400"
+                                loading="lazy" 
+                                class="single-blog__image">
+                            </div>
                         </div>
-                        <div class="privacy__body">
-                            <ul class="privacy__list">
-                                <li class="privacy__item">                         
-                                    <p class="privacy__info" data-i18n="terms_p1">
-                                       The content published on this website (texts, images, design) belongs to Valley Dinn and is protected by copyright.
-                                    </p>
-                                </li>
-                                <li class="privacy__item"> 
-                                    <p class="privacy__info" data-i18n="terms_p2">
-                                            Copying or using materials without permission is prohibited. We are not responsible for any errors on the site or for actions taken by users based on its content.
-                                    </p>
-                                </li>
-                                <li class="privacy__item"> 
-                                    <p class="privacy__info" data-i18n="terms_p3">
-                                         By using this website, you agree to these terms.
-                                    </p>
-                                </li>
-                            </ul>
+                        <div class="single-blog__body">
+                            <p class="single-blog-ph">
+                                I still remember the day I opened a code editor for the first time. It was a simple program for writing HTML — nothing fancy, but that's where my journey into the world of programming began.
+                                Back then, I didn't fully understand what I was doing. I simply typed:
+                                <code  aria-hidden="true">
+                                    <span class="hero__description-span">
+                                        &lt;h1&gt;
+                                    </span>
+                                </code>
+                                Hello world
+                                <code  aria-hidden="true">
+                                    <span class="hero__description-span ">
+                                        &lt;/h1&gt;
+                                    </span>
+                                </code>
+                                …and saw that text appear in the browser. It might not sound like a big deal, but for me, it was pure magic: I wrote something, and the computer understood it. That moment hooked me.
+                            </p>
+                            <h3 class="single-blog__body-title">The First Struggle:</h3>
+                            <p class="single-blog-ph">
+                                My first real struggle came with JavaScript. I wanted to create a button that changed something on the page, but everything went wrong. I didn’t understand why the code wasn’t working, what addEventListener meant, or why functions were necessary. But those challenges pushed me to read more, try things out, search for answers — and I got into it.                           
+                             </p>
+                            <h3 class="single-blog__body-title"> The First Small Victory: </h3>
+                            <p class="single-blog-ph">
+                                After a few weeks of trying, I finally created a simple page with an animation, theme switcher, and working buttons. It wasn’t anything big, but I felt truly proud: "I made this myself!"
+                            </p>
+                            <h3 class="single-blog__body-title">What I Learned: </h3>
+                            <p class="single-blog-ph">
+                                That first experience taught me some valuable lessons:
+                                <ul class="single-blog__ph-list">
+                                    <li class="single-blog__ph-item">
+                                        <p class="single-blog-ph">Programming isn’t about knowing everything from the start.</p>
+                                    </li>
+                                    <li class="single-blog__ph-item">
+                                        <p class="single-blog-ph">It’s about learning constantly, trying, failing, and being patient.</p>
+                                    </li>
+                                    <li class="single-blog__ph-item">
+                                        <p class="single-blog-ph">It’s like learning a new language — but this time, you're speaking to a computer.</p>
+                                    </li>
+                                </ul>
+                            </p>
+                            <h3 class="single-blog__body-title"> Why I Keep Going: </h3>
+                            <p class="single-blog-ph">
+                               Now I’m diving deeper into web development: HTML, CSS, JavaScript, frameworks, Git, and even some backend. But I always remember where it all began. That first step — it really matters.
+                            </p>                            
+                            <p class="single-blog-ph">
+                               If you’re just starting out, don’t be afraid. Making mistakes is part of the process. Programming is a journey, and every project, no matter how small, moves you forward.
+                            </p>
                         </div>
-                    </div>
+                        <div class="single-blog__extra">
+                            <div class="single-blog__tag">
+                                <span class="blog__tag">Web Developer</span>
+                                <span class="blog__tag">Web Developer Job</span>
+                                <span class="blog__tag">Web Development</span>                                
+                            </div>      
+                            <div class="single-blog__subtitle">
+                                <div class="blog__card-description">
+                                <p class="blog__actor">Text<span class="blog__actor-span">Valentyn</span></p>
+                                <p class="blog__time">Date<span class="blog__actor-span"><time datetime="2025/6/27">27.Jun 2025</time></span></p>
+                                <p class="blog__reading-time">Read<span class="blog__actor-span">1 Min</span></p>
+                                </div>
+                                <button class="single-blog button button--share" type="button" data-js-share-button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path class="arrow-move-up" d="M7.5286 0.861919C7.78895 0.601569 8.21106 0.601569 8.4714 0.861919L11.1381 3.52859C11.3984 3.78893 11.3984 4.21104 11.1381 4.47139C10.8777 4.73174 10.4556 4.73174 10.1953 4.47139L8.66667 2.9428L8.66667 9.99999C8.66667 10.3682 8.36819 10.6667 8 10.6667C7.63181 10.6667 7.33333 10.3682 7.33333 9.99999L7.33333 2.9428L5.80474 4.47139C5.54439 4.73174 5.12228 4.73174 4.86193 4.47139C4.60158 4.21104 4.60158 3.78893 4.86193 3.52859L7.5286 0.861919Z" fill="#2D3648"/>
+                                    <path d="M2.66667 7.33332C3.03486 7.33332 3.33333 7.6318 3.33333 7.99999V13.3333C3.33333 13.5101 3.40357 13.6797 3.5286 13.8047C3.65362 13.9298 3.82319 14 4 14H12C12.1768 14 12.3464 13.9298 12.4714 13.8047C12.5964 13.6797 12.6667 13.5101 12.6667 13.3333V7.99999C12.6667 7.6318 12.9651 7.33332 13.3333 7.33332C13.7015 7.33332 14 7.6318 14 7.99999V13.3333C14 13.8638 13.7893 14.3725 13.4142 14.7475C13.0391 15.1226 12.5304 15.3333 12 15.3333H4C3.46957 15.3333 2.96086 15.1226 2.58579 14.7475C2.21071 14.3725 2 13.8638 2 13.3333V7.99999C2 7.6318 2.29848 7.33332 2.66667 7.33332Z" fill="#2D3648"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>

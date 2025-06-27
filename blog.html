@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,  user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
-    <title>Dikhtyarenko Valentyn. Front-end | Terms & Conditions</title>    
+    <title>Dikhtyarenko Valentyn. Front-end | Blog</title>    
     <link rel="icon" href="/Portfolio/icons/header/logotipe.svg">
     <script type="module" crossorigin src="/Portfolio/assets/main-D0-nJ9_8.js"></script>
     <link rel="stylesheet" crossorigin href="/Portfolio/assets/main-57fALTO2.css">
@@ -27,7 +27,7 @@
                   <a href="./index.html" class="header__menu-link h4">Home</a>
                 </li>
                 <li class="header__menu-item">
-                  <a href="./blog.html" class="header__menu-link h4">Blogs</a>
+                  <a href="./blog.html" class="header__menu-link is-active h4">Blogs</a>
                 </li>
               </ul>
               <form class="header__menu-search field" data-js-search-form>
@@ -92,43 +92,75 @@
       </div>
     </header>
 
-    <main>
-        <section class="section section--privacy" aria-labelledby="Terms & Conditions-title" data-js-privacy>
-            <div class="section__inner container">
-                <div class="change-lenguage">
-                    <div class="change-lenguage__inner">
-                        <button data-js-button-english type="button" class="button change-lenguage__button is-active button__circel">EN</button>
-                        <button data-js-button-japanese type="button" class="button change-lenguage__button button__circel">日本語</button>
-                    </div>
+    <main>      
+        <section data-js-section class="section section--small" aria-labelledby="blog-title">
+        <div class="section__inner container">
+          <div class="blog">
+            <div class="blog__inner">                            
+              <div class="about__header">
+                <div class="skills__header-info">
+                <h2 class="skills__title" id="blog-title">Blogs 
+                  <svg width="160" height="12" viewBox="0 0 160 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g class="skills__title-icon-svg">
+                      <circle cx="6" cy="6" r="5.3333" fill="#12F7D6" />
+                      <circle cx="154" cy="6" r="5.3333" fill="#12F7D6" />
+                      <rect x="6" y="5" width="148" height="2" fill="#12F7D6" />
+                    </g>
+                  </svg>
+                </h2>
+                <p class="skills__subitlte">My thoughts on technology and business, welcome to subscribe</p>
                 </div>
-                <div class="privacy">
-                    <div class="privacy__inner">
-                        <div class="privacy__header">                            
-                            <h2 class="section__title" data-i18n="terms_title" id="Terms & Conditions-title">Terms & Conditions</h2>
-                        </div>
-                        <div class="privacy__body">
-                            <ul class="privacy__list">
-                                <li class="privacy__item">                         
-                                    <p class="privacy__info" data-i18n="terms_p1">
-                                       The content published on this website (texts, images, design) belongs to Valley Dinn and is protected by copyright.
-                                    </p>
-                                </li>
-                                <li class="privacy__item"> 
-                                    <p class="privacy__info" data-i18n="terms_p2">
-                                            Copying or using materials without permission is prohibited. We are not responsible for any errors on the site or for actions taken by users based on its content.
-                                    </p>
-                                </li>
-                                <li class="privacy__item"> 
-                                    <p class="privacy__info" data-i18n="terms_p3">
-                                         By using this website, you agree to these terms.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
+              </div>
+              <div class="blog__body">
+                <div class="blog__card">
+                  <div class="blog__card-image">
+                    <img 
+                    src="/Portfolio/assets/1-CyctxQhQ.jpg" 
+                    alt=""
+                    width="240"
+                    height="240"
+                    loading="lazy" 
+                    class="blog__image">
+                  </div>
+                  <div class="blog__card-info">
+                    <h3 class="blog__title">What does it take to become a web developer?</h3>
+                    <p class="blog__subtitle">Web development, also known as website development, encompasses a variety of tasks and processes involved in creating websites for the internet…</p>
+                    <a href="./single-blog.html" class="blog__link">Read More <span class="blog__link-span">></span><span class="blog__link-span">></span></a>
+                    <div class="blog__card-description">
+                      <span class="blog__tag">Web Developer</span>
+                      <p class="blog__actor">Text<span class="blog__actor-span">Valentyn</span></p>
+                      <p class="blog__time">Date<span class="blog__actor-span"><time datetime="2025/10/4">4.Oct 2025</time></span></p>
+                      <p class="blog__reading-time">Read<span class="blog__actor-span">1 Min</span></p>
                     </div>
+                  </div>
                 </div>
+                <div class="blog__card">
+                  <div class="blog__card-image">
+                    <img 
+                    src="/Portfolio/assets/3-B1tcK2ta.jpeg" 
+                    alt=""
+                    width="240"
+                    height="240"
+                    loading="lazy" 
+                    class="blog__image">
+                  </div>
+                  <div class="blog__card-info">
+                    <h3 class="blog__title">My First Experience with Programming</h3>
+                    <p class="blog__subtitle">I still remember the day I opened a code editor for the first time. It was a simple program for writing HTML — nothing fancy, but...</p>
+                    <a href="./single-blog-2.html" class="blog__link">Read More <span class="blog__link-span">></span><span class="blog__link-span">></span></a>
+                    <div class="blog__card-description">
+                      <span class="blog__tag">Web Developer</span>
+                      <p class="blog__actor">Text<span class="blog__actor-span">Valentyn</span></p>
+                      <p class="blog__time">Date<span class="blog__actor-span"><time datetime="2025/6/27">27.Jun 2025</time></span></p>
+                      <p class="blog__reading-time">Read<span class="blog__actor-span">1 Min</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer" aria-labelledby="footer-title">
