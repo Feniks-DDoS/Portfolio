@@ -97,12 +97,16 @@
         &-textarea,
         &-control {
             background-color: transparent;
-            color: var(--color-gray);
+            color: var(--color-light);
             font-size: rem(16);
             border: none;
             min-width: 100%;
             border-bottom: rem(1) solid var(--color-brand-1);
             padding: rem(12) rem(14);
+
+            &:user-invalid {
+                border-color: var(--color-red);
+            }
         }
 
         &-textarea {
@@ -119,6 +123,22 @@
         align-items: center;
         justify-content: center;
         column-gap: rem(16);
+    }
+
+    &__errors {
+        font-family: 'Ubuntu';
+        font-size: rem(16);
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        bottom: rem(-32);
+        font-weight: 300;
+        color: var(--color-red);
+        line-height: 1.25;
+
+    &:empty {
+        display: none;
+    }
     }
 
 }

@@ -1,0 +1,61 @@
+@use "../helpers" as *;
+
+
+.single-blog {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Ubuntu';
+        font-size: rem(16);
+        font-weight: 300;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: rem(720);
+        row-gap: rem(32);
+    }
+
+    &__extra,
+    &__body,
+    &__header {
+        display: grid;
+        row-gap: rem(32);
+    }
+
+    &__extra {
+        align-self: start;
+        min-width: 100%;
+    }
+
+    &__tag {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: rem(24);
+    }
+
+    &__body {
+        &-title {
+            font-size: rem(16);
+            font-weight: 300;
+        }
+    }
+
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: rem(16);
+        padding-block: rem(16);
+        border-block: rem(1) solid var(--color-gray);
+    }
+
+    &__image {
+        border-radius: rem(8);
+    }
+}

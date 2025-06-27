@@ -62,7 +62,7 @@ class AutoScroll {
 
                     setTimeout(() => {
                         this.isScrolling = false;
-                    }, 1000);
+                    }, 500);
                 }
             });
         }, {

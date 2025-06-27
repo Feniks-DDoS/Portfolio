@@ -8,6 +8,8 @@ import HeroBodyAnimationCollection from "./HeroAnimation.js"
 import AutoScrollCollection from "./AutoSectionScroll.js"
 import SwiperCollection from "./WorkSwiper.js"
 import ChangeLanCollection from "./ChangeLang.js"
+import FormValidateCollection from "./FromValidate.js"
+import ShareCollection from "./Share.js"
 
 
 
@@ -27,3 +29,7 @@ new AutoScrollCollection()
 new SwiperCollection()
 
 new ChangeLanCollection()
+
+new FormValidateCollection()
+
+new ShareCollection()

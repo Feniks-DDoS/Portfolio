@@ -35,6 +35,7 @@
     &__link {
         padding: rem(8);
         transition: var(--transition-duration);
+        position: relative;
 
         &.is-active {
             color: var(--color-dark);
@@ -43,8 +44,28 @@
             border-radius: rem(40);
         }
 
+        &-text {
+            position: absolute;
+            left: 150%;
+            bottom: 0;
+            width: max-content;
+            background-color: var(--color-light);
+            padding: rem(8) rem(16);
+            border-radius: rem(8);
+            color: var(--color-dark-light);
+            font-family: 'Ubuntu';
+            font-size: rem(16);
+            font-weight: 300;
+            transition: var(--transition-duration);
+            opacity: 0;
+        }
+
         @include hover {
             filter: drop-shadow(rem(0) rem(0) rem(10) rgba($color: #FFFFFF, $alpha: 1.0));
+
+            .aside__link-text {
+                opacity: 1;
+            }
         }
     }
 }

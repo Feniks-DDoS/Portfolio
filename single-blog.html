@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,  user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
-    <title>Dikhtyarenko Valentyn. Front-end | Terms & Conditions</title>    
-    <link rel="icon" href="/Portfolio/icons/header/logotipe.svg">
-    <script type="module" src="/Portfolio/src/js/main.js" defer></script>
+    <title>Dikhtyarenko Valentyn. Front-end | Privacy Policy</title>    
+    <link rel="icon" href="./public/icons/header/logotipe.svg">
+    <script type="module" src="./src/js/main.js" defer></script>
   </head>
   <body data-js-page-body>
     <header data-js-header class="header" aria-labelledby="header-title">
@@ -26,7 +26,7 @@
                   <a href="./index.html" class="header__menu-link h4">Home</a>
                 </li>
                 <li class="header__menu-item">
-                  <a href="./blog.html" class="header__menu-link h4">Blogs</a>
+                  <a href="./blog.html" class="header__menu-link is-active h4">Blogs</a>
                 </li>
               </ul>
               <form class="header__menu-search field" data-js-search-form>
@@ -86,40 +86,81 @@
       </div>
     </header>
 
-    <main>
-        <section class="section section--privacy" aria-labelledby="Terms & Conditions-title" data-js-privacy>
+    <main>  
+        <section class="section" aria-labelledby="single-blog-title" data-js-share>
             <div class="section__inner container">
-                <div class="change-lenguage">
-                    <div class="change-lenguage__inner">
-                        <button data-js-button-english type="button" class="button change-lenguage__button is-active button__circel">EN</button>
-                        <button data-js-button-japanese type="button" class="button change-lenguage__button button__circel">日本語</button>
-                    </div>
-                </div>
-                <div class="privacy">
-                    <div class="privacy__inner">
-                        <div class="privacy__header">                            
-                            <h2 class="section__title" data-i18n="terms_title" id="Terms & Conditions-title">Terms & Conditions</h2>
+                <div class="single-blog">
+                    <article class="single-blog__inner">
+                        <div class="single-blog__header">
+                            <h2 class="single-blog__title h3">What does it take to become a web developer?</h2>
+                            <div class="single-blog__subtitle">
+                                <div class="blog__card-description">
+                                <p class="blog__actor">Text<span class="blog__actor-span">Valentyn</span></p>
+                                <p class="blog__time">Date<span class="blog__actor-span"><time datetime="2025/10/4">4.Oct 2025</time></span></p>
+                                <p class="blog__reading-time">Read<span class="blog__actor-span">1 Min</span></p>
+                                </div>
+                                <button class="single-blog button button--share" type="button" data-js-share-button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path class="arrow-move-up" d="M7.5286 0.861919C7.78895 0.601569 8.21106 0.601569 8.4714 0.861919L11.1381 3.52859C11.3984 3.78893 11.3984 4.21104 11.1381 4.47139C10.8777 4.73174 10.4556 4.73174 10.1953 4.47139L8.66667 2.9428L8.66667 9.99999C8.66667 10.3682 8.36819 10.6667 8 10.6667C7.63181 10.6667 7.33333 10.3682 7.33333 9.99999L7.33333 2.9428L5.80474 4.47139C5.54439 4.73174 5.12228 4.73174 4.86193 4.47139C4.60158 4.21104 4.60158 3.78893 4.86193 3.52859L7.5286 0.861919Z" fill="#2D3648"/>
+                                    <path d="M2.66667 7.33332C3.03486 7.33332 3.33333 7.6318 3.33333 7.99999V13.3333C3.33333 13.5101 3.40357 13.6797 3.5286 13.8047C3.65362 13.9298 3.82319 14 4 14H12C12.1768 14 12.3464 13.9298 12.4714 13.8047C12.5964 13.6797 12.6667 13.5101 12.6667 13.3333V7.99999C12.6667 7.6318 12.9651 7.33332 13.3333 7.33332C13.7015 7.33332 14 7.6318 14 7.99999V13.3333C14 13.8638 13.7893 14.3725 13.4142 14.7475C13.0391 15.1226 12.5304 15.3333 12 15.3333H4C3.46957 15.3333 2.96086 15.1226 2.58579 14.7475C2.21071 14.3725 2 13.8638 2 13.3333V7.99999C2 7.6318 2.29848 7.33332 2.66667 7.33332Z" fill="#2D3648"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="single-blog__image-wrapper">
+                                <img 
+                                src="./public/images/blog/2.jpg" 
+                                alt=""
+                                width="720"
+                                height="400"
+                                loading="lazy" 
+                                class="single-blog__image">
+                            </div>
                         </div>
-                        <div class="privacy__body">
-                            <ul class="privacy__list">
-                                <li class="privacy__item">                         
-                                    <p class="privacy__info" data-i18n="terms_p1">
-                                       The content published on this website (texts, images, design) belongs to Valley Dinn and is protected by copyright.
-                                    </p>
-                                </li>
-                                <li class="privacy__item"> 
-                                    <p class="privacy__info" data-i18n="terms_p2">
-                                            Copying or using materials without permission is prohibited. We are not responsible for any errors on the site or for actions taken by users based on its content.
-                                    </p>
-                                </li>
-                                <li class="privacy__item"> 
-                                    <p class="privacy__info" data-i18n="terms_p3">
-                                         By using this website, you agree to these terms.
-                                    </p>
-                                </li>
-                            </ul>
+                        <div class="single-blog__body">
+                            <p class="single-blog-ph">
+                                Web development, also known as website development, encompasses a variety of tasks and processes involved in creating websites for the internet. It involves various specialized fields, each with its own set of skills and techniques. While some individuals might view web development as a holistic process, it can be broken down into several key areas that are essential for building a functional and visually appealing website. 
+                            </p>
+                            <h3 class="single-blog__body-title">Frontend Development:</h3>
+                            <p class="single-blog-ph">
+                                Frontend development focuses on the user-facing aspects of a website. It involves creating the visual elements that users interact with directly. Frontend developers use a combination of languages such as HTML, CSS, and JavaScript to build and style the layout, design, and interactivity of the website. They need to have a strong understanding of user experience (UX) and user interface (UI) design to ensure that the website is both aesthetically pleasing and user-friendly. 
+                            </p>
+                            <h3 class="single-blog__body-title">Backend Development: </h3>
+                            <p class="single-blog-ph">
+                                Backend development involves the behind-the-scenes functionality of a website. It includes server-side scripting, databases, and the logic that operates behind the scenes to ensure that the frontend works smoothly. Backend developers work with programming languages such as Ruby, Python, PHP, and Java, and frameworks such as Node.js, Django, and Laravel. They are responsible for building and maintaining the server, application, and database that power the website.
+                            </p>
+                            <h3 class="single-blog__body-title">DevOps (Development and Operations): </h3>
+                            <p class="single-blog-ph">
+                                DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). DevOps professionals work to shorten the systems development life cycle and provide continuous delivery with high software quality. They utilize various tools to automate the software development process, including coding, building, testing, and deployment. DevOps engineers often work closely with both frontend and backend developers to ensure a smooth and efficient development and deployment process. 
+                            </p>
+                            <h3 class="single-blog__body-title">Design: </h3>
+                            <p class="single-blog-ph">
+                                Design is a crucial aspect of web development that focuses on creating visually appealing and intuitive interfaces. Web designers use their creative skills to develop the overall look and feel of a website. They work with graphic design tools and software to create layouts, color schemes, typography, and other visual elements that contribute to the overall user experience. Good design is essential for attracting and retaining users on a website. 
+                            </p>                            
+                            <p class="single-blog-ph">
+                                Understanding and mastering these four key areas of web development can open up numerous career opportunities in the ever-evolving field of technology. It is important for web developers to stay updated with the latest trends and technologies and continuously enhance their skills to build innovative and high-quality websites that meet the needs of modern users.
+                            </p>
                         </div>
-                    </div>
+                        <div class="single-blog__extra">
+                            <div class="single-blog__tag">
+                                <span class="blog__tag">Web Developer</span>
+                                <span class="blog__tag">Web Developer Job</span>
+                                <span class="blog__tag">Web Development</span>                                
+                            </div>      
+                            <div class="single-blog__subtitle">
+                                <div class="blog__card-description">
+                                <p class="blog__actor">Text<span class="blog__actor-span">Valentyn</span></p>
+                                <p class="blog__time">Date<span class="blog__actor-span"><time datetime="2025/10/4">4.Oct 2025</time></span></p>
+                                <p class="blog__reading-time">Read<span class="blog__actor-span">1 Min</span></p>
+                                </div>
+                                <button class="single-blog button button--share" type="button" data-js-share-button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path class="arrow-move-up" d="M7.5286 0.861919C7.78895 0.601569 8.21106 0.601569 8.4714 0.861919L11.1381 3.52859C11.3984 3.78893 11.3984 4.21104 11.1381 4.47139C10.8777 4.73174 10.4556 4.73174 10.1953 4.47139L8.66667 2.9428L8.66667 9.99999C8.66667 10.3682 8.36819 10.6667 8 10.6667C7.63181 10.6667 7.33333 10.3682 7.33333 9.99999L7.33333 2.9428L5.80474 4.47139C5.54439 4.73174 5.12228 4.73174 4.86193 4.47139C4.60158 4.21104 4.60158 3.78893 4.86193 3.52859L7.5286 0.861919Z" fill="#2D3648"/>
+                                    <path d="M2.66667 7.33332C3.03486 7.33332 3.33333 7.6318 3.33333 7.99999V13.3333C3.33333 13.5101 3.40357 13.6797 3.5286 13.8047C3.65362 13.9298 3.82319 14 4 14H12C12.1768 14 12.3464 13.9298 12.4714 13.8047C12.5964 13.6797 12.6667 13.5101 12.6667 13.3333V7.99999C12.6667 7.6318 12.9651 7.33332 13.3333 7.33332C13.7015 7.33332 14 7.6318 14 7.99999V13.3333C14 13.8638 13.7893 14.3725 13.4142 14.7475C13.0391 15.1226 12.5304 15.3333 12 15.3333H4C3.46957 15.3333 2.96086 15.1226 2.58579 14.7475C2.21071 14.3725 2 13.8638 2 13.3333V7.99999C2 7.6318 2.29848 7.33332 2.66667 7.33332Z" fill="#2D3648"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
