@@ -120,6 +120,7 @@
 
         @include laptop {
             column-gap: rem(48);
+            grid-template-columns: repeat(4,1fr);
         }
 
         @include tablet {

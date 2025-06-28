@@ -68,6 +68,11 @@
         row-gap: rem(32);
 
         @include laptop {
+            padding-left: rem(32);
+        }
+
+        @include tablet {
+            padding-left: 0;
         }
 
         &-span {

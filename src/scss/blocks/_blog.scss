@@ -21,9 +21,14 @@
         border-block: rem(1) solid var(--color-light);
         border-radius: rem(4);
 
-        @include tablet {
+        @include laptop {
             column-gap: rem(32);
+            padding-inline: rem(78);
+        }
+
+        @include tablet {
             padding-block: rem(32);
+            padding-inline: rem(14);
         }
 
         @include mobile {

@@ -1,16 +1,16 @@
 import "../scss/main.scss"
 
-import ShowSeacrhCollection from "./ShowSearch.js"
-import PreloaderCollection from "./Preloader.js"
-import TitleAnimationCollection from "./TitleAnimation.js"
-import AsideChangeCollection from "./AsideChange.js"
-import HeroBodyAnimationCollection from "./HeroAnimation.js"
-import AutoScrollCollection from "./AutoSectionScroll.js"
-import SwiperCollection from "./WorkSwiper.js"
-import ChangeLanCollection from "./ChangeLang.js"
-import FormValidateCollection from "./FromValidate.js"
-import ShareCollection from "./Share.js"
-import SearchCollection from "./Search.js"
+import ShowSeacrhCollection from "./search/ShowSearch.js"
+import PreloaderCollection from "./components/Preloader.js"
+import TitleAnimationCollection from "./components/TitleAnimation.js"
+import AsideChangeCollection from "./aside/AsideChange.js"
+import HeroBodyAnimationCollection from "./components/HeroAnimation.js"
+import AutoScrollCollection from "./section/AutoSectionScroll.js"
+import SwiperCollection from "./components/WorkSwiper.js"
+import ChangeLanCollection from "./components/ChangeLang.js"
+import FormValidateCollection from "./contact-pages/FromValidate.js"
+import ShareCollection from "./components/Share.js"
+import SearchCollection from "./search/Search.js"
 
 
 
@@ -25,7 +25,7 @@ new AsideChangeCollection()
 
 new HeroBodyAnimationCollection()
 
-new AutoScrollCollection()
+// new AutoScrollCollection()
 
 new SwiperCollection()
 

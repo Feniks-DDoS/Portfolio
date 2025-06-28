@@ -1,3 +1,5 @@
+import MatchMedia from '../utils/MatchMedia.js'
+
 const rootSelector = `[data-js-search-form]`
 
 class ShowSeacrh {
@@ -25,6 +27,8 @@ class ShowSeacrh {
     }
 
     onClickShowButton() {
+
+        if(MatchMedia.mobile) {
         this.showButtonElement.classList.add(this.stateClasses.isHide)
         this.closeButtonElement.classList.add(this.stateClasses.isActive)
         this.seacrhDisplayElement.classList.add(this.stateClasses.isActive)
@@ -32,6 +36,7 @@ class ShowSeacrh {
         controlElement.focus()
 
         document.documentElement.classList.add(this.stateClasses.isLock)
+        }
     }
 
     onClickCloseButton() {

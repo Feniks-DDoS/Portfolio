@@ -9,6 +9,10 @@
         align-items: center;
         column-gap: rem(64);
 
+        @include laptop {
+            column-gap: rem(16);
+        }
+
         @include tablet {
             column-gap: 0;
             flex-direction: column;

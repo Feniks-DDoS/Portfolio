@@ -1,4 +1,4 @@
-import MatchMedia from './MatchMedia.js'
+import MatchMedia from '../utils/MatchMedia.js'
 
 const rootSelector = `[data-js-page-body]`;
 
@@ -59,6 +59,10 @@ class AutoScroll {
                     this.isScrolling = true;
 
                     this.scrolltoWithOffset(entry.target, 300);
+
+                    if(MatchMedia.laptop) {                        
+                    this.scrolltoWithOffset(entry.target, 200);
+                    }
 
                     setTimeout(() => {
                         this.isScrolling = false;
