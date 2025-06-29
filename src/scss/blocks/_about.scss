@@ -57,6 +57,11 @@
         padding: rem(16) rem(40);
         border-radius: rem(40) rem(0);
         max-width: max-content;
+        transition: var(--transition-duration);
+
+        @include hover {
+            box-shadow: inset rem(0) rem(0) rem(10) var(--color-brand-1);
+        }
 
         @include mobile-s {
             justify-self: center;

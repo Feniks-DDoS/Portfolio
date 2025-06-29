@@ -9,21 +9,22 @@ html {
 
     /* Общая ширина/высота скроллбара */
         &::-webkit-scrollbar {
-        width: 10px; /* для вертикального скролла */
-        height: 10px; /* для горизонтального скролла */
+        width: rem(10); /* для вертикального скролла */
+        height: rem(10); /* для горизонтального скролла */
+
         }
 
         /* Фон трека (дорожки) */
         &::-webkit-scrollbar-track {
-        background-color: #1A1E23;
-        border-radius: 5px;
+        background-color: var(--color-dark);
+        border-radius: rem(5);
         }
 
         /* Ползунок (сам скроллер) */
         &::-webkit-scrollbar-thumb {
-        background-color: #12F7D6;
-        border-radius: 5px;
-        border: 2px solid #1A1E23; /* рамка вокруг ползунка */
+        background-color: var(--color-brand-1);
+        border-radius: rem(5);
+        border: 2px solid var(--color-dark); /* рамка вокруг ползунка */
         }
 
         /* При наведении на ползунок */
@@ -31,7 +32,7 @@ html {
         background-color: #0bcdb3;
         }
 
-        scrollbar-color: #12F7D6 #1A1E23;
+        scrollbar-color: var(--color-brand-1) var(--color-dark);
         scrollbar-width: thin;
 }
 
@@ -166,6 +167,19 @@ button {
         background-color: transparent;
         border: rem(2) solid var(--color-brand-1);
         color: var(--color-light);
+
+        .person__download-path {
+            animation-name: svgAnimation;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+       }
+
+       @keyframes svgAnimation {
+          0%  {
+            transform: translateY(-10%);
+          }
        }
     }
 
