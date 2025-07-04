@@ -198,12 +198,11 @@ button {
     &--green {
         background-color: var(--color-brand-1);
         color: var(--color-dark);
-        border: none;
+        border: rem(2) solid var(--color-brand-1);
 
         @include hover {
 
         background-color: transparent;
-        box-shadow:inset rem(0) rem(0) rem(10) rgba($color: #12F7D6, $alpha: 1.0);
         color: var(--color-light); 
         }
     }
