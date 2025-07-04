@@ -32,6 +32,11 @@
         &-body {
             padding-block: rem(32);
         }
+
+        &-extra {
+            display: grid;
+            row-gap: rem(10);
+        }
     }
 
     &__image {

@@ -162,6 +162,7 @@ button {
         color: var(--color-dark);
         column-gap: 1rem;
         max-width: max-content;
+        border: rem(2) solid var(--color-light);
 
        @include hover {
         background-color: transparent;
