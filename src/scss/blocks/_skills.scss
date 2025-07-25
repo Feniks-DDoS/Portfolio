@@ -142,17 +142,10 @@
 
 
         @include hover {
-        .skills__item-title--git::before,
-        .skills__item-title--vite::before,
-        .skills__item-title--sass::before,
-        .skills__item-title--js::before,
-        .skills__item-title--css::before,
-        .skills__item-title--html::before {
-            width: 100%;
-        }
 
          .skills__image--git,
         .skills__image--vite,
+        .skills__image--npm,
         .skills__image--sass,
         .skills__image--js,
         .skills__image--css,
@@ -178,6 +171,9 @@
           .skills__image--git {
              filter: drop-shadow( rem(0) rem(0) rem(20) rgba($color: rgba(236, 91, 6, 0.838), $alpha: 1.0));
           }
+          .skills__image--npm {
+             filter: drop-shadow( rem(0) rem(0) rem(20) rgba($color: #FFFFFF, $alpha: 1.0));
+          }
         }
              
 
@@ -190,109 +186,33 @@
             text-transform: capitalize;
             max-width: max-content;
             justify-self: center;     
+            font-family: 'Ubuntu';
 
         &--html {
             color: var(--color-red);
-            position: relative;
-
-            &::before {
-            transition: var(--transition-duration);
-                position: absolute;
-                bottom: -2%;
-                content: "";
-                left: 0;
-                right: 0;
-                width: 0;
-                height: 5%;
-                border-radius: rem(8);
-                background-color: var(--color-red);
-            }
         }
 
         &--css {
             color: var(--color-dark-blue);
-             position: relative;
-
-            &::before {
-            transition: var(--transition-duration);
-                position: absolute;
-                bottom: -2%;
-                content: "";
-                left: 0;
-                right: 0;
-                width: 0;
-                height: 5%;
-                border-radius: rem(8);
-                background-color: var(--color-blue);
-            }
         }
 
         &--js {
-            color: var(--color-orange);   position: relative;
-
-            &::before {
-            transition: var(--transition-duration);
-                position: absolute;
-                bottom: -2%;
-                content: "";
-                left: 0;
-                right: 0;
-                width: 0;
-                height: 5%;
-                border-radius: rem(8);
-                background-color: var(--color-orange);
-            }
+            color: var(--color-orange);  
         }
 
         &--sass {
-            color: var(--color-pink);   position: relative;
-
-            &::before {
-            transition: var(--transition-duration);
-                position: absolute;
-                bottom: -2%;
-                content: "";
-                left: 0;
-                right: 0;
-                width: 0;
-                height: 5%;
-                border-radius: rem(8);
-                background-color: var(--color-pink);
-            }
+            color: var(--color-pink);   
         }
 
         &--vite {
-            color: var(--color-light);   position: relative;
-
-            &::before {
-            transition: var(--transition-duration);
-                position: absolute;
-                bottom: -2%;
-                content: "";
-                left: 0;
-                right: 0;
-                width: 0;
-                height: 5%;
-                border-radius: rem(8);
-                background-color: var(--color-light);
-            }
+            color: var(--color-light);  
         }
 
         &--git {
-            color: var(--color-orange-dark);   position: relative;
-
-            &::before {
-            transition: var(--transition-duration);
-                position: absolute;
-                bottom: -2%;
-                content: "";
-                left: 0;
-                right: 0;
-                width: 0;
-                height: 5%;
-                border-radius: rem(8);
-                background-color: var(--color-orange-dark);
-            }
+            color: var(--color-orange-dark);   
+        }
+        &--npm {
+            color: rgb(0,0,0);  
         }
         }
     }
@@ -333,6 +253,10 @@
 
         &--git {
             background-color: var(--color-orange-dark);
+        }
+        
+        &--npm {
+            background-color: var(--color-light);
         }
     }
 }
