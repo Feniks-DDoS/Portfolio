@@ -2,6 +2,14 @@
 
 .soc1als {
 
+    @include tablet {
+        align-self: flex-end;
+    }
+
+    @include mobile {
+        align-self: center;
+    }
+
     @include mobile-s {
         display: none;
     }
@@ -37,6 +45,13 @@
         @include tablet {
             display: none;
         }
+        }
+    }
+
+    &__svg {
+        @include tablet {
+            width: rem(35);
+            height: rem(35);
         }
     }
     

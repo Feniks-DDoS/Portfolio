@@ -6,16 +6,22 @@ class Preloader {
         root: rootSelector,
     }
 
+    stateClasses = {
+        isLock: 'is-lock'
+    }
+
     constructor(rootElement) {
         this.rootElement = rootElement
 
         this.preloaderCloseEvent = new Event('preloaderClose', { bubbles: true })
+        document.documentElement.classList.add(this.stateClasses.isLock)
         this.bindEvents()
     }
 
     onAnimationEnd(event) {       
         if(event.animationName === 'fade-out-preloader') {
             this.rootElement.dispatchEvent(this.preloaderCloseEvent)
+            document.documentElement.classList.remove(this.stateClasses.isLock)
         }
     }
 

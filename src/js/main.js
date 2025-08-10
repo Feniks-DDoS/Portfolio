@@ -10,6 +10,7 @@ import ChangeLanCollection from "./components/ChangeLang.js"
 import FormValidateCollection from "./contact-pages/FromValidate.js"
 import ShareCollection from "./components/Share.js" 
 import GoToTop from "./components/GoToTop.js"
+import BurgerButtonCollection from "./components/BurgerButton.js"
 
 
 
@@ -34,3 +35,5 @@ new FormValidateCollection()
 new ShareCollection()
 
 new GoToTop()
+
+new BurgerButtonCollection()
