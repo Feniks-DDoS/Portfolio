@@ -67,5 +67,80 @@
                 opacity: 1;
             }
         }
+
+        &-home {
+            @include hover {
+                .home-1 {           
+                translate: -6% -6%;
+                transition: var(--transition-duration);
+                }
+                .home-2 {                  
+                translate: 6% -6%;
+                transition: var(--transition-duration);
+                }
+                .home-3 {                  
+                translate: 6% 6%;
+                transition: var(--transition-duration);
+                }
+                .home-4 {
+                translate: -6% 6%;
+                transition: var(--transition-duration);
+                }
+            }
+        }
+
+        &-about {
+            @include hover {
+                .about-1 {
+                    transition: var(--transition-duration);
+                    translate: 0% -10%;
+                }
+            }
+        } 
+        
+        &-skill {
+            @include hover {
+                .skill-1 {
+                    transition: var(--transition-duration);
+                    translate: -10%;
+                }
+                .skill-2 {
+                    transition: var(--transition-duration);
+                    translate: 10%;
+                }
+            }
+        }
+
+          
+        &-work {
+            @include hover {
+                .work-1 {
+                    transition: var(--transition-duration);
+                    translate: 0% -10%;
+                }
+            }
+        } 
+          
+        &-blog {
+            @include hover {
+                .blog-1 {
+                    transition: var(--transition-duration);       
+                    translate: 6% -8%;
+                }
+                .blog-2 {
+                    transition: var(--transition-duration);
+                    translate: -6% 6%;
+                }
+            }
+        } 
+
+        &-contact {
+            @include hover {
+                .contact-1 {
+                    transition: var(--transition-duration);
+                    translate: 0% -10%;
+                }
+            }
+        } 
     }
 }
