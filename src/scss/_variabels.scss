@@ -21,6 +21,11 @@
     --container-width: #{rem(1664)};
     --container-padding-x: #{rem(24)};
 
+    --box-shadow-1:  #{rem(-4)} #{rem(-4)} #{rem(12)} hsla(0, 0%, 100%, .05), #{rem(4)} #{rem(4)} #{rem(12)} rgba(0 ,0 ,0, 1.0);
+    --box-shadow-1-transparent: #{rem(-4)} #{rem(-4)} #{rem(12)} hsla(0, 0%, 100%, 0), #{rem(4)} #{rem(4)} #{rem(12)} transparent;
+    --box-shadow-inset: inset #{rem(-22)} #{rem(-14)} #{rem(14)} #{rem(2)} hsla(0, 0%, 100%, .015), inset #{rem(8)} #{rem(4)} #{rem(20)} #{rem(12)} rgba(0 ,0 ,0, 1.0);
+    --box-shadow-inset-transparent: inset #{rem(-22)} #{rem(-14)} #{rem(14)} #{rem(2)} hsla(0, 0%, 100%, 0), inset #{rem(8)} #{rem(4)} #{rem(20)} #{rem(12)} transparent;
+
     --transition-duration: 0.2s;
 
     --font-family-base: 'IBMPlexMono' , sans-serif;

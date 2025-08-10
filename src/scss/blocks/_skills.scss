@@ -21,7 +21,7 @@
             right: 0;
             width: 100%;
             height: 100%;
-            background: url(../../../../Portfolio/public/icons/skills/bg.svg) center/contain no-repeat;
+            background: url(./public/icons/skills/bg.svg) center/contain no-repeat;
         }
 
         &-info {
@@ -137,13 +137,15 @@
     }
 
     &__item {
+        --shadowBefore: var(--box-shadow-1), var(--box-shadow-inset-transparent);
+        --shadowAfter: var(--box-shadow-1-transparent), var(--box-shadow-inset);
         padding: rem(30) rem(40);
         border-radius: rem(15);
         background-color: var(--color-dark);
         font-family: 'Ubuntu';
         font-size: rem(20);
         font-weight: 500;
-        box-shadow: rem(1) rem(3) rem(6) var(--color-gray);
+        box-shadow: var(--shadowBefore);
         position: relative;
         transition-duration: var(--transition-duration);
         translate: 0% 50%;
@@ -154,8 +156,12 @@
             opacity: 1;
         }
 
+        @include tablet {
+           box-shadow: var(--shadowAfter);
+        }
+
         @include hover {
-        box-shadow:  rem(1) rem(3) rem(10) var(--color-light);
+           box-shadow: var(--shadowAfter);
         }
 
         &::before {   

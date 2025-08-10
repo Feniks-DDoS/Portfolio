@@ -12,6 +12,18 @@
         }
     }
 
+    &__logo {
+        color: var(--color-light);
+
+        @include hover {
+            color: var(--color-brand-1);
+        }
+
+        @include tablet {
+            color: var(--color-brand-1);
+        }
+    }
+
     &__menu {
         display: flex;
         justify-content: space-between;
