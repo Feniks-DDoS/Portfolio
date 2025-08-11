@@ -12,6 +12,7 @@ import ShareCollection from "./components/Share.js"
 import GoToTop from "./components/GoToTop.js"
 import BurgerButtonCollection from "./components/BurgerButton.js"
 import HeaderAnimationCollection from "./components/HeaderAnimation.js"
+import CursorCollection from "./UI/cursor.js"
 
 
 
@@ -40,3 +41,5 @@ new GoToTop()
 new HeaderAnimationCollection()
 
 new BurgerButtonCollection()
+
+new CursorCollection()

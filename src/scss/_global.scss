@@ -5,7 +5,8 @@ html {
         overflow: hidden;
     }
     
-    cursor: url(../../public/images/cursor/mouse.png) 4 4, auto;
+    // cursor: url(../../public/images/cursor/mouse.png) 4 4, auto;
+    cursor: none;
 
     /* Общая ширина/высота скроллбара */
         &::-webkit-scrollbar {
@@ -114,6 +115,7 @@ textarea,
 select,
 svg * {
     transition: var(--transition-duration);
+    cursor: none;
 }
 
 a {
@@ -136,6 +138,7 @@ a,
 button {
     &[aria-label] {
         position: relative;  
+        cursor: none;
         
          &::before  {
         @include abs-center;
@@ -156,6 +159,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: none;
 
     &--light {
         background-color: var(--color-light);
