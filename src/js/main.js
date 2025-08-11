@@ -11,6 +11,7 @@ import FormValidateCollection from "./contact-pages/FromValidate.js"
 import ShareCollection from "./components/Share.js" 
 import GoToTop from "./components/GoToTop.js"
 import BurgerButtonCollection from "./components/BurgerButton.js"
+import HeaderAnimationCollection from "./components/HeaderAnimation.js"
 
 
 
@@ -37,3 +38,5 @@ new ShareCollection()
 new GoToTop()
 
 new BurgerButtonCollection()
+
+new HeaderAnimationCollection()

@@ -10,10 +10,6 @@
         font-family: 'Ubuntu';
         text-transform: capitalize;
         color: var(--color-brand-2);
-
-    @include mobile {
-        display: none;
-    }
     }
 
     &__inner {

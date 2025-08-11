@@ -2,13 +2,31 @@
 
 .header {
 
+    @include tablet {
+        position: sticky;
+        top: 0;
+        z-index: 200;
+        transition: var(--transition-duration);
+
+        &.animated {
+           box-shadow: rem(0) rem(0) rem(5) var(--color-brand-1);
+           background-color: var(--color-dark);
+           border-bottom-left-radius: rem(15);
+           border-bottom-right-radius: rem(15);
+           .header__body {
+            padding-block: rem(12);
+           }
+        }
+    }
+
     &__body {
+        transition: var(--transition-duration);
         padding-block: rem(48);
         border-bottom: rem(1) solid var(--color-gray);
         border-radius: rem(4);
 
-        @include mobile {
-            padding-block: rem(24);
+        @include tablet {
+            padding-block: rem(32);
         }
     }
 

@@ -29,17 +29,16 @@ class BurgerButton {
         document.documentElement.classList.toggle(this.stateClasses.isLock)
     }
 
-    onClickLink() {
+    onClickLink(e) {
         this.burgerButtonElement.classList.remove(this.stateClasses.isActive)
         this.overlayMenuElement.classList.remove(this.stateClasses.isActive)
         document.documentElement.classList.remove(this.stateClasses.isLock)
-
     }
 
     bindEvents() {
         this.burgerButtonElement.addEventListener('click' , () => this.onClick())
         this.overlayLinkElements.forEach((e) => {
-            e.addEventListener('click' , () => this.onClickLink())
+            e.addEventListener('click' , (e) => this.onClickLink(e))
         })
     }
 }
