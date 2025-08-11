@@ -7,6 +7,8 @@
             grid-column: -1/ 1;
             grid-row: 1/ 1;
             padding-bottom: rem(64);
+            max-width: rem(385);
+            justify-self: center;
     }
     &__card {
         padding: rem(30);
