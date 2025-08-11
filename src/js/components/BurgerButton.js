@@ -20,7 +20,10 @@ class BurgerButton {
         this.overlayMenuElement = this.rootElement.querySelector(this.selectors.overlayMenu)
         this.overlayLinkElements = this.rootElement.querySelectorAll(this.selectors.overlayLink)
 
+
+        if(document.body.dataset.jsHome === 'home'){
         this.bindEvents()
+        } return
     }
 
     onClick() {

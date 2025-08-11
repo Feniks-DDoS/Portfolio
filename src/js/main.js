@@ -37,6 +37,6 @@ new ShareCollection()
 
 new GoToTop()
 
-new BurgerButtonCollection()
-
 new HeaderAnimationCollection()
+
+new BurgerButtonCollection()
