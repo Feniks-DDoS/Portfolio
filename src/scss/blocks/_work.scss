@@ -4,5 +4,8 @@
 .work {
     &__body {
         padding-top: rem(64);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
