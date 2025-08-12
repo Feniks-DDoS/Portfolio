@@ -21,7 +21,7 @@ class BurgerButton {
         this.overlayLinkElements = this.rootElement.querySelectorAll(this.selectors.overlayLink)
 
 
-        if(document.body.dataset.jsHome === 'home'){
+        if(document.body.dataset.jsHome === 'home' || document.body.dataset.jsBlog === 'blog'){
         this.bindEvents()
         } return
     }

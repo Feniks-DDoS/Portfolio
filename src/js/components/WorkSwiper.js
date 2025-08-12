@@ -21,23 +21,11 @@ class Swiper {
 
         this.bindEvents()
         this.updateUI()
-        this.updateArrowState()
-    }
-
-     updateArrowState() {
-        this.buttonPrevElement.forEach((element) => {
-            element.disabled = this.currentIndex === 0
-        })
-        this.buttonNextElement.forEach((element) => {
-            element.disabled = this.currentIndex === this.swiperSlideElements.length - 1
-        })
     }
 
     goTo(index) {
-        if (index < 0 || index >= this.total) return
-        this.currentIndex = index
+        this.currentIndex = (index + this.total) % this.total;
         this.updateUI()
-        this.updateArrowState()
     }
 
     updateUI() {
@@ -49,13 +37,10 @@ class Swiper {
 
     onNextClick() {
         this.goTo(this.currentIndex + 1)
-        this.updateArrowState()
     }
 
     onPrevClick() {
-
         this.goTo(this.currentIndex - 1)
-        this.updateArrowState()
     }
 
     bindEvents() {

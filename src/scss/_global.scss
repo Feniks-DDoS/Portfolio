@@ -6,7 +6,6 @@ html {
     }
     
     // cursor: url(../../public/images/cursor/mouse.png) 4 4, auto;
-    cursor: none;
 
     /* Общая ширина/высота скроллбара */
         &::-webkit-scrollbar {
@@ -138,7 +137,6 @@ a,
 button {
     &[aria-label] {
         position: relative;  
-        cursor: none;
         
          &::before  {
         @include abs-center;

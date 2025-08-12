@@ -46,13 +46,6 @@
     }
 
     &__button {
-
-        &:disabled {
-            color: var(--color-gray);
-            opacity: 0.7;
-            pointer-events: none;
-        }
-
         @include hover {
             box-shadow: inset rem(0) rem(0) rem(10) rgba($color: #12F7D6, $alpha: 1.0);
         }
