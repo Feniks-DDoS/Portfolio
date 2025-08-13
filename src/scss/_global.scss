@@ -5,6 +5,10 @@ html {
         overflow: hidden;
     }
     
+    &::selection {
+        background-color: var(--color-brand-1);
+        color: var(--color-dark);
+    }
     // cursor: url(../../public/images/cursor/mouse.png) 4 4, auto;
 
     /* Общая ширина/высота скроллбара */
