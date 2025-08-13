@@ -7,7 +7,8 @@ class Cursor {
     }
 
     stateClasses = {
-        isHovered: 'hovered'
+        isHovered: 'hovered',
+        isHide: 'is-hide',
     }
 
     constructor(rootElement) {
@@ -24,9 +25,24 @@ class Cursor {
         this.auraX = 0;
         this.auraY = 0;
 
-        this.bindEvents();
-        this.animate = this.animate.bind(this);
-        this.animate();
+        if(!this.isTouchDevice()) {                   
+            this.bindEvents();
+            this.animate = this.animate.bind(this);
+            this.animate();
+        }
+
+        if(this.isTouchDevice()) {
+            this.cursorElement.classList.add(this.stateClasses.isHide)
+            this.auraElement.classList.add(this.stateClasses.isHide)
+        }
+    }
+
+    isTouchDevice() {
+        return (
+            'ontouchstart' in window ||
+            navigator.maxTouchPoints > 0 ||
+            window.matchMedia('(pointer: coarse)').matches
+        )
     }
 
     animate() {

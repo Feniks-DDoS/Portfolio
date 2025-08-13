@@ -6,26 +6,27 @@
   position: fixed;
   top: 0;
   left: 0;
+  transform: translate(-50% -50%);
   border-radius: 50%;
   user-select: none;
   pointer-events: none;
-  z-index: 10000;
-
-  @include tablet {
+  z-index: 10000; 
+  
+  &.is-hide {
     display: none;
   }
 }
 
 .cursor {
-  width: rem(10);
-  height: rem(10);
+  width: rem(15);
+  height: rem(15);
   transform: translate(-50%, -50%);
   background-color: var(--color-brand-2);
 
   &.hovered {    
   opacity: 0;
   transition: 0.2s opacity;
-  }
+  } 
 
 }
 
@@ -40,5 +41,38 @@
   border-color: var(--color-brand-2);
   box-shadow: rem(0) rem(0) rem(15) var(--color-brand-2); 
   transition: 0.3s box-shadow;
+  animation: auraAnimation 1s linear infinite;
+
+  &::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    inset: 0;
+    border: rem(2) solid var(--color-brand-2);
+    border-radius: 50%;
+    animation: afterAnimation 1s linear infinite;
+  }
   }
 } 
+
+@keyframes afterAnimation {
+  to {
+    scale: 1.1;
+  }
+}
+
+@keyframes auraAnimation {
+
+  0% {
+  box-shadow: rem(0) rem(0) rem(5) var(--color-brand-2); 
+  }
+
+  80% {
+  box-shadow: rem(0) rem(0) rem(25) var(--color-brand-2); 
+  }
+
+  100% {
+  box-shadow: rem(0) rem(0) rem(5) var(--color-brand-2); 
+  }
+}
