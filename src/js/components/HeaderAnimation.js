@@ -25,7 +25,7 @@ class HeaderAnimation {
     }
 
     init() {
-    window.addEventListener('scroll', () => this.handleScroll());
+        window.addEventListener('scroll', () => this.handleScroll());
     }
 
  
